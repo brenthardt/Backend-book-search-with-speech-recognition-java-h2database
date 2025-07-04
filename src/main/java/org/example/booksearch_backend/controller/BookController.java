@@ -24,7 +24,7 @@ public class BookController {
 
     @GetMapping("/search")
     public ResponseEntity<String> searchBooks(@RequestParam String query) {
-        String apiKey = "AIzaSyDEILlVNZATxuwvo6lYIc1iZMLy1Hy076w";
+        String apiKey = "paste you api key here from https://www.googleapis.com/books";
         String apiUrl = "https://www.googleapis.com/books/v1/volumes?q=" + query + "&key=" + apiKey;
 
         RestTemplate restTemplate = new RestTemplate();
